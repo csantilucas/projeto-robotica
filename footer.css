@@ -6,9 +6,9 @@
     --color-neutral-40: #f5f5f5;
 
 }
-main{
+/* main{
     height: 80vh;
-}
+} */
 
 * {
     font-family: 'montserrat', sans-serif;
@@ -16,6 +16,7 @@ main{
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 1px;
+    
 }
 footer{
     width: 100%;
@@ -97,7 +98,7 @@ opacity: 0.8;
 }
 
 .footer_list .footer-link:hover {
-    color: rgb(131, 49, 207);
+    color: rgb(0, 0, 0);
 }
 
 #footer_subscribe{

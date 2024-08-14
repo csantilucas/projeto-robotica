@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+header {
+    height: 80vh;
+}
+
+#check {
+	display: none;
+    }
+
+#check:checked ~ .barra {
+	-webkit-transform: translate(300px);
+	   -moz-transform: translate(300px);
+	    -ms-transform: translate(300px);
+	     -o-transform: translate(300px);
+	        transform: translate(300px);
+}
+
+.icone {
+	font-size: 30px;
+	position: fixed;
+	z-index: 2;
+	cursor: pointer;
+    left: 20px;
+    top: 20px;
+}
+
+.barra {
+
+    border-radius: 0px 30px 30px 0px;
+	width: 300px;
+	height: 40%;
+	position: fixed;
+	background-color: #ffffff;
+	padding-top: 50px;
+	left: -300px;
+	-webkit-transition: all .35s linear;
+	   -moz-transition: all .35s linear;
+	    -ms-transition: all .35s linear;
+	     -o-transition: all .35s linear;
+	        transition: all .35s linear;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        grid-template-columns:repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    header{
+        grid-template-columns:repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+    
+}
