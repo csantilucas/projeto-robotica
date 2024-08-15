@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
+#imgheader {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+#in{
+font-family: ;
+font-size: x-large; 
+}
+.bar a{
+    text-decoration: none;
+    color: white;
+    
+}
+.bar ul {
+    list-style: none;
+    padding-top: 20px;
+
+}
+
+.list {
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;  
+}
+
+
+.bar {
+   padding: 20px;
+}
+
+.list .link:hover {
+    color: rgb(241, 255, 49);
+}
+
+.back:houver {
+    color: rgb(241, 255, 49);
+}
