@@ -1,185 +1,478 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robotica</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="section.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="section.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+  </head>
 
-<body>
-
+  <body>
     <header>
+      <input type="checkbox" id="check" />
+      <label class="icone" for="check"
+        ><i class="fa fa-bars" aria-hidden="true"></i> MENU</label
+      >
 
-        <input type="checkbox" id="check">
-        <label class="icone" for="check"><i class="fa fa-bars" aria-hidden="true"></i> MENU</label>
+      <div class="barra">
+        <div class="bar">
+          <div class="back">
+            <ul class="list">
+              <li>
+                <a href="home.html" class="link" id="in">Pagina Inicial</a>
+              </li>
+            </ul>
 
-
-        <div class="barra">
-
-
-
-
-            <div class="bar">
-
-                <div class="back">
-                    <ul class="list">                              
-                        <li>
-                            <a href="home.html" class="link" id="in">Pagina Inicial</a>
-                        </li>                       
-                    </ul>
-
-                <div class="back">
-
-                    <ul class="list">                              
-                        <li>
-                            <a href="#" class="link" id="in">Todos os livros</a>
-                        </li>                       
-                    </ul>
-                <div class="list">
-                    <h2>Gêneros</h2>
-                        <div class="links">
-                            <ul class="list">
-                               
-                                <li>
-                                    <a href="#" class="link">Romance</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link">Ficção</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link">Estudos</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link">Suspense</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link">Aventura</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link">Terror</a>
-                                </li>
-                                           
-                            </ul>
-                        </div>
-                   
-                    </div>
-
+            <div class="back">
+              <ul class="list">
+                <li>
+                  <a href="#" class="link" id="in">Todos os livros</a>
+                </li>
+              </ul>
+              <div class="list">
+                <h2>Gêneros</h2>
+                <div class="links">
+                  <ul class="list">
+                    <li>
+                      <a href="romance.html" class="link">Romance</a>
+                    </li>
+                    <li>
+                      <a href="ficcao.html" class="link">Ficção</a>
+                    </li>
+                    <li>
+                      <a href="estudos.html" class="link">Estudos</a>
+                    </li>
+                    <li>
+                      <a href="suspense.html" class="link">Suspense</a>
+                    </li>
+                    <li>
+                      <a href="aventura.html" class="link">Aventura</a>
+                    </li>
+                    <li>
+                      <a href="terror.html" class="link">Terror</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
-
-
-
+          </div>
         </div>
-        </div>
-        <main>
-            <img id="imgheader" src="img-test.jpg" alt="test">
-        </main>
-
-
-        
-        <br>
-        <hr>
-        <br>
-        
-       
-   
+      </div>
+      <main>
+        <img id="imgheader" src="img-test.jpg" alt="test" />
+      </main>
     </header>
 
+    <!-- carosel dos livros-->
 
-    <section>
+    <section class="slider ">
+      <div class="slide-conteiner swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                    <!--colocar a imagem da capa do livro aqui-->
+                    <img src="https://th.bing.com/th/id/OIP.AG2NlOnauC_Tf-VxG3WmBQHaF-?rs=1&pid=ImgDetMain"alt="capa do livro"class="card-img"
+                    />
+                </div>
+              </div>
+
+                <div class="card-content">
+                  <h2 class="name">nome do livro</h2>
+                  <br>
+                  <p class="description">
+                    descriçao do livro exempli Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Eligendi quos sit laboriosam
+                    dolor sequi qui tempora. Autem veritatis cupiditate,
+                    corporis, quasi blanditiis consequuntur illum sit error quam
+                    cumque quia dolore.
+                  </p>
+                  <br>
+                  <button type="button" class="button">Ver Mais</button>
+                </div> 
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+  
+                  <div class="card-image">
+                      <!--colocar a imagem da capa do livro aqui-->
+                      <img src="https://th.bing.com/th/id/OIP.AG2NlOnauC_Tf-VxG3WmBQHaF-?rs=1&pid=ImgDetMain"alt="capa do livro"class="card-img"
+                      />
+                  </div>
+                </div>
+  
+                  <div class="card-content">
+                    <h2 class="name">nome do livro</h2>
+                    <br>
+                    <p class="description">
+                      descriçao do livro exempli Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Eligendi quos sit laboriosam
+                      dolor sequi qui tempora. Autem veritatis cupiditate,
+                      corporis, quasi blanditiis consequuntur illum sit error quam
+                      cumque quia dolore.
+                    </p>
+                    <br>
+                    <button type="button" class="button">Ver Mais</button>
+                  </div>
+  
+  
+                
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+  
+                  <div class="card-image">
+                      <!--colocar a imagem da capa do livro aqui-->
+                      <img src="https://th.bing.com/th/id/OIP.AG2NlOnauC_Tf-VxG3WmBQHaF-?rs=1&pid=ImgDetMain"alt="capa do livro"class="card-img"
+                      />
+                  </div>
+                </div>
+  
+                  <div class="card-content">
+                    <h2 class="name">nome do livro</h2>
+                    <br>
+                    <p class="description">
+                      descriçao do livro exempli Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Eligendi quos sit laboriosam
+                      dolor sequi qui tempora. Autem veritatis cupiditate,
+                      corporis, quasi blanditiis consequuntur illum sit error quam
+                      cumque quia dolore.
+                    </p>
+                    <br>
+                    <button type="button" class="button">Ver Mais</button>
+                  </div>
+  
+  
+                
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+  
+                  <div class="card-image">
+                      <!--colocar a imagem da capa do livro aqui-->
+                      <img src="https://th.bing.com/th/id/OIP.AG2NlOnauC_Tf-VxG3WmBQHaF-?rs=1&pid=ImgDetMain"alt="capa do livro"class="card-img"
+                      />
+                  </div>
+                </div>
+  
+                  <div class="card-content">
+                    <h2 class="name">nome do livro</h2>
+                    <br>
+                    <p class="description">
+                      descriçao do livro exempli Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Eligendi quos sit laboriosam
+                      dolor sequi qui tempora. Autem veritatis cupiditate,
+                      corporis, quasi blanditiis consequuntur illum sit error quam
+                      cumque quia dolore.
+                    </p>
+                    <br>
+                    <button type="button" class="button">Ver Mais</button>
+                  </div>
+  
+  
+                
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+  
+                  <div class="card-image">
+                      <!--colocar a imagem da capa do livro aqui-->
+                      <img src="https://th.bing.com/th/id/OIP.AG2NlOnauC_Tf-VxG3WmBQHaF-?rs=1&pid=ImgDetMain"alt="capa do livro"class="card-img"
+                      />
+                  </div>
+                </div>
+  
+                  <div class="card-content">
+                    <h2 class="name">nome do livro</h2>
+                    <br>
+                    <p class="description">
+                      descriçao do livro exempli Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Eligendi quos sit laboriosam
+                      dolor sequi qui tempora. Autem veritatis cupiditate,
+                      corporis, quasi blanditiis consequuntur illum sit error quam
+                      cumque quia dolore.
+                    </p>
+                    <br>
+                    <button type="button" class="button">Ver Mais</button>
+                  </div>
+  
+  
+                
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+  
+                  <div class="card-image">
+                      <!--colocar a imagem da capa do livro aqui-->
+                      <img src="https://th.bing.com/th/id/OIP.AG2NlOnauC_Tf-VxG3WmBQHaF-?rs=1&pid=ImgDetMain"alt="capa do livro"class="card-img"
+                      />
+                  </div>
+                </div>
+  
+                  <div class="card-content">
+                    <h2 class="name">nome do livro</h2>
+                    <br>
+                    <p class="description">
+                      descriçao do livro exempli Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Eligendi quos sit laboriosam
+                      dolor sequi qui tempora. Autem veritatis cupiditate,
+                      corporis, quasi blanditiis consequuntur illum sit error quam
+                      cumque quia dolore.
+                    </p>
+                    <br>
+                    <button type="button" class="button">Ver Mais</button>
+                  </div>
+  
+  
+                
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+  
+                  <div class="card-image">
+                      <!--colocar a imagem da capa do livro aqui-->
+                      <img src="https://th.bing.com/th/id/OIP.AG2NlOnauC_Tf-VxG3WmBQHaF-?rs=1&pid=ImgDetMain"alt="capa do livro"class="card-img"
+                      />
+                  </div>
+                </div>
+  
+                  <div class="card-content">
+                    <h2 class="name">nome do livro</h2>
+                    <br>
+                    <p class="description">
+                      descriçao do livro exempli Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Eligendi quos sit laboriosam
+                      dolor sequi qui tempora. Autem veritatis cupiditate,
+                      corporis, quasi blanditiis consequuntur illum sit error quam
+                      cumque quia dolore.
+                    </p>
+                    <br>
+                    <button type="button" class="button">Ver Mais</button>
+                  </div>
+  
+  
+                
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+  
+                  <div class="card-image">
+                      <!--colocar a imagem da capa do livro aqui-->
+                      <img src="https://th.bing.com/th/id/OIP.AG2NlOnauC_Tf-VxG3WmBQHaF-?rs=1&pid=ImgDetMain"alt="capa do livro"class="card-img"
+                      />
+                  </div>
+                </div>
+  
+                  <div class="card-content">
+                    <h2 class="name">nome do livro</h2>
+                    <br>
+                    <p class="description">
+                      descriçao do livro exempli Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Eligendi quos sit laboriosam
+                      dolor sequi qui tempora. Autem veritatis cupiditate,
+                      corporis, quasi blanditiis consequuntur illum sit error quam
+                      cumque quia dolore.
+                    </p>
+                    <br>
+                    <button type="button" class="button">Ver Mais</button>
+                  </div>
+  
+  
+                
+            </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+  
+                  <div class="card-image">
+                      <!--colocar a imagem da capa do livro aqui-->
+                      <img src="https://th.bing.com/th/id/OIP.AG2NlOnauC_Tf-VxG3WmBQHaF-?rs=1&pid=ImgDetMain"alt="capa do livro"class="card-img"
+                      />
+                  </div>
+                </div>
+  
+                  <div class="card-content">
+                    <h2 class="name">nome do livro</h2>
+                    <br>
+                    <p class="description">
+                      descriçao do livro exempli Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Eligendi quos sit laboriosam
+                      dolor sequi qui tempora. Autem veritatis cupiditate,
+                      corporis, quasi blanditiis consequuntur illum sit error quam
+                      cumque quia dolore.
+                    </p>
+                    <br>
+                    <button type="button" class="button">Ver Mais</button>
+                  </div>
+  
+  
+                
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </section>
+
+    <section class="menu1">
+      
+      <div class="menu">
+        <div class="conteudos">
+          <button type="button" id="click">
+            <a href="Romance.html"><h4>Romance</h4></a>
+          </button>
+        </div>
+
+        <div class="conteudos">
+          <button href="#" id="click">
+            <a href="ficcao.html"><h4>Ficção</h4></a>
+          </button>
+        </div>
+
+        <div class="conteudos">
+          <button href="#" id="click">
+            <a href="estudos.html"><h4>Estudos</h4></a>
+          </button>
+        </div>
+
+        <div class="conteudos">
+          <button href="#" id="click">
+            <a href="terror.html"><h4>Terror</h4></a>
+          </button>
+        </div>
+
+        <div class="conteudos">
+          <button href="#" id="click">
+            <a href="aventura.html"><h4>Aventura</h4></a>
+          </button>
+        </div>
+
+        <div class="conteudos">
+          <button href="#" id="click">
+            <a href="suspense.html"><h4>Suspense</h4></a>
+          </button>
+        </div>
+      </div>
+
     </section>
 
     <div class="phase">
-        <h1 class="-phase">“Um homem não é outra coisa senão o que faz de si mesmo.” </h1>
-            <h1 class="--phase">Jean-Paul Sartre</h1>
-        </h1>
+      <h1 class="-phase">
+        “Um homem não é outra coisa senão o que faz de si mesmo.”
+      </h1>
+      <h1 class="--phase">Jean-Paul Sartre</h1>
     </div>
 
-    <section>
-    </section>
-
-
-
+    <section></section>
 
     <footer>
-        <div id="footer_content">
-            <div id="footer_contacts">
-                <h1>Quem Somos</h1>
-                <p>Descubra mais sobre nós</p>
+      <div id="footer_content">
+        <div id="footer_contacts">
+          <h1>Quem Somos</h1>
+          <p>Descubra mais sobre nós</p>
 
+          <div id="footer_social_media">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/t3rceirao_redes?igsh=MXN0d3VjOXh5aGJqMA=="
+              class="footer-link"
+              id="instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
 
-                <div id="footer_social_media">
-                    <a target="_blank" href="https://www.instagram.com/t3rceirao_redes?igsh=MXN0d3VjOXh5aGJqMA=="
-                        class="footer-link" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a target="_blank" href="https://www.tiktok.com/@t3rceirao_redes?_t=8ooqRSkpp2s&_r=1"
-                        class="footer-link" id="tiktok">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <ul class="footer_list">
-                <li>
-                    <h3>Nossa sala</h3>
-                </li>
-                <li>
-                    <a href="sobre.html" class="footer-link">Sobre Nós</a>
-                </li>
-                <li>
-                    <a href="sala.html" class="footer-link">Nossa Sala</a>
-                </li>
-                <li>
-                    <a href="torneio.html" class="footer-link">Torneio</a>
-                </li>
-            </ul>
-
-            <ul class="footer_list">
-                <li>
-                    <h3>Produção do Projeto</h3>
-                </li>
-                <li>
-                    <a href="responsaveis.html" class="footer-link">Responsaveis</a>
-                </li>
-                <li>
-                    <a href="producao.html" class="footer-link">Produção</a>
-                </li>
-            </ul>
-
-            <div id="footer_subscribe">
-                <h3>Receba novidadedes</h3>
-                <p>envie seu e-mail para receber novidades</p>
-
-                <div id="input_group">
-                    <input type="email" id="email">
-                    <button>
-                        <i class="fa-regular fa-envelope"></i>
-                    </button>
-                </div>
-            </div>
-
+            <a
+              target="_blank"
+              href="https://www.tiktok.com/@t3rceirao_redes?_t=8ooqRSkpp2s&_r=1"
+              class="footer-link"
+              id="tiktok"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
         </div>
 
-        <div id="footer_copyrigth">
-            &copy 2024 all rigths reserverd
+        <ul class="footer_list">
+          <li>
+            <h3>Nossa sala</h3>
+          </li>
+          <li>
+            <a href="sobre.html" class="footer-link">Sobre Nós</a>
+          </li>
+          <li>
+            <a href="sala.html" class="footer-link">Nossa Sala</a>
+          </li>
+          <li>
+            <a href="torneio.html" class="footer-link">Torneio</a>
+          </li>
+        </ul>
+
+        <ul class="footer_list">
+          <li>
+            <h3>Produção do Projeto</h3>
+          </li>
+          <li>
+            <a href="responsaveis.html" class="footer-link">Responsaveis</a>
+          </li>
+          <li>
+            <a href="producao.html" class="footer-link">Produção</a>
+          </li>
+        </ul>
+
+        <div id="footer_subscribe">
+          <h3>Receba novidadedes</h3>
+          <p>envie seu e-mail para receber novidades</p>
+
+          <div id="input_group">
+            <input type="email" id="email" />
+            <button>
+              <i class="fa-regular fa-envelope"></i>
+            </button>
+          </div>
         </div>
+      </div>
+
+      <div id="footer_copyrigth">&copy 2024 all rigths reserverd</div>
     </footer>
-    
+  </body>
 
-    
-</body>
+  <script src="swiper-bundle.min.js"></script>
 
+  <script src="script.js"></script>
 </html>
