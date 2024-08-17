@@ -1,0 +1,139 @@
+
+.livros {
+    background-color: transparent ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  0 20px;
+    justify-content: center;
+    align-items: center;
+    height: 230vh;
+    
+    
+    
+}
+
+
+.all {
+    background-color: transparent;    
+    display: grid;
+    gap: 9rem;
+    grid-template-columns: repeat(3, 1fr);
+    
+
+}
+.product-base {
+    background-color:white;
+    height: 620px;
+    width: 500px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: grid;
+    
+    
+    
+}
+
+.justific-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+   
+   
+
+}
+
+.product-img{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(253, 252, 252);
+    border: 1px solid black;
+    
+    
+    
+    
+
+}
+
+/* tamanho da imagem */
+.img-content img {
+    width: 100%;
+    height: 290px;
+    
+    
+}
+
+.justific-content{
+    padding: 20px;
+}
+
+
+
+/* edilcao do texto do nome do livro */
+.product-name {
+    background-color: rgb(255, 255, 255);
+    /* tipo de fonte */
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px;
+    
+    
+}
+
+.product-description {
+    background-color: transparent(255, 255, 255);
+    width: 400px;
+    padding: 20px;
+    font-size: medium;
+}
+
+.button-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.button {
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+button:hover{
+    background: rgb(247, 190, 48);
+    transition: all 0.6s ease;
+}
+
+.button a:hover{
+        color: rgb(0, 0, 0);
+        transition: all 0.6s ease;
+}
+
+@media screen and (max-width: 1750px) {
+    .all{
+        grid-template-columns:repeat(2, 1fr);
+        gap: 2rem;
+        
+    
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    .all{
+        grid-template-columns:repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+    
+}

@@ -1,3 +1,9 @@
+.menu1 {
+    height: 10vh;
+    padding: 100px;
+    width: 100%;
+}
+
 .menu {
     display: grid;
     gap: 1rem;
@@ -17,7 +23,7 @@
 
 #click {
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: transparent;
     width: 200px;
     background-color: rgb(255, 255, 255);
