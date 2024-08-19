@@ -143,11 +143,5 @@ button:hover {
 }
 
 
-@media screen and (max-width:700px) {
-    .slider{
-        display: none;
-        
-    }
-    
-}
+
 
