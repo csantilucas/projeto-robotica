@@ -70,36 +70,7 @@ section {
     text-align: center;
 }
 
-.phase {
-	text-align: center;	
-}
 
-.phase {
-	background-color: rgb(17, 17, 17);
-	border-radius: 50px;
-	height: 100px;
-	
-}
-
-.-phase {
-	font-family: "Dancing Script", cursive;
-  	font-optical-sizing: auto;
-  	font-weight: 200;
-  	font-style: normal;
-	font-size: 40px;
-	color: rgb(255, 255, 255)
-  
-}
-
-.--phase {
-	
-  font-family: "Edu VIC WA NT Beginner", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-size:20px;
-  color: rgb(250, 249, 249)
-	}
 
 
 

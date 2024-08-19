@@ -82,8 +82,8 @@
 .card-image {
     position: relative;
     /*tamanho da imagem*/
-    height: 200px;
-    width: 250px;
+    height: 250px;
+    width: 200px;
     /*cor do fundo da imagem*/
     background: rgb(0, 0, 0);
     padding: 2px;
@@ -111,7 +111,7 @@
 .description {
     font-size: 14px;
     /*cor da descricao*/
-    color: #515c79;
+    color: #122e41;
     text-align: center;
 
 }
@@ -133,5 +133,21 @@
 }
 
 button:hover {
-    background: goldenrod;
+    background: rgb(127, 118, 98);
 }
+
+
+
+.swiper-navBtn:hover{
+    color: rgb(127, 118, 98);
+}
+
+
+@media screen and (max-width:700px) {
+    .slider{
+        display: none;
+        
+    }
+    
+}
+

@@ -1,0 +1,9 @@
+.videohm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(5, 7, 7);
+    height: 900px;
+    
+}
+
