@@ -71,12 +71,38 @@
     width: 100%;
     /*cor de fundo*/
     background-color: #272a2c;
-    border-radius: 25px;
+    border-radius:  25px 25px 0px 0px;
 }
 
 
 
+.destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-radius:  0px;
+}
 
+.ar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 170, 13);
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-radius:  10px;
+
+}
+
+.text-destaque {
+    font-size: large;
+    color: #ffffff;
+}
 
 
 .card-image {
@@ -95,17 +121,17 @@
     height: 100%;
     width: 100%;
     object-fit: couver;
-    border-radius: 8%;
+    border-radius: 10px;
     /*borda da imagem*/
     border: 4px solid #ffffff;
 
 }
 
 .name {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 600;
     /*cor do nome do livro*/
-    color: #333;
+    color: rgb(233, 170, 13);
 }
 
 .description {
@@ -120,7 +146,7 @@
     border: none;
     font-size: 16px;
     /*cor da fonte do botao*/
-    color: #ffffff;
+    color: rgb(233, 170, 13);
     padding: 8px 16px;
     /*cor do batao*/
     background-color: #272a2c;
@@ -139,7 +165,7 @@ button:hover {
 
 
 .swiper-navBtn:hover{
-    color: rgb(127, 118, 98);
+    color: rgb(27, 27, 27);
 }
 
 

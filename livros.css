@@ -1,0 +1,61 @@
+.livro{
+
+    height: 500px;
+    width: 100%;
+}
+
+.all{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: bisque;
+}
+
+.imagem-livro {
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem {
+    height: 80%;
+    width: 40%;
+    background-color: white;
+}
+
+
+.conteudo-livro{
+    display: grid;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+.nome-livro {
+
+}
+
+.descricao-livro {
+
+}
+
+.button{
+    
+}
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    .all{
+        grid-template-columns:repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+    
+}
