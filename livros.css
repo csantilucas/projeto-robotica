@@ -1,26 +1,301 @@
+body {
+    background-image: url(fundo.jpg);
+    color: white;
+   }
+
+
+
 .livro{
 
     height: 500px;
     width: 100%;
-    background-color: aqua;
     
-}
+}    
 
 
 .all {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
+    border-radius: 40px 40px 0 0;
+    border: 4px solid rgb(255, 227, 18);
+} 
+
 
 
 .imagem-livro {
-    background-color: aliceblue;
-    width: 50%;
+    background-color: transparent;
+    width: 100%;
     height: 500px;
+    
 }
 
 .conteudo-livro{
-    background-color: black;
-    width: 50%;
+    background-color: transparent;
+    width: 100%;
     height: 500px;
+    
 }
+/* ----------------------------- */
+
+/* imagem do livro */
+
+
+
+.imagem-livro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.imagem{
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 227, 18);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img  {
+    width: 60%;
+    height: 90%;
+    background-color: aquamarine;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* imagem do livro */
+
+/* ----------------------------- */
+
+/* conteudo do livro */
+
+
+
+
+.conteudo-livro {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+.nome-livro p{
+    
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(252, 199, 66);
+}
+
+
+
+
+.descricao-livro {
+    
+    height: 300px;
+    width: 600px;
+    
+}
+.descricao-livro p{
+    font-size: 15px;
+    font-weight:200;
+    color: rgb(255, 255, 255);
+}
+
+
+
+button {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    border: none;
+    background-color: rgb(255, 227, 18);
+    border-radius: 10px;
+    cursor: c
+
+}
+
+button a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+button a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* conteudo do livro */
+
+/* ----------------------------- */
+
+/* video */
+
+.video-livro {
+    top: 0%;
+    height: 600px;
+    width: 100%;
+    border-radius: 0 40px 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+
+}
+
+.content-video{
+    border: 4px solid rgb(255, 227, 18);
+    border-radius: 40px 40px 40px 40px;
+    background-color: transparent;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.video1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+video {
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    
+}
+
+
+
+
+
+
+
+/* video */
+
+/* ----------------------------- */
+
+/* treiler */
+
+
+.treiler {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10%;     
+    padding-top: 50px;
+    
+}|
+h1 {
+    font-size: 100px ;
+}
+
+
+
+
+
+
+
+/* treiler */
+
+/* ----------------------------- */
+
+/* resposividade */
+
+
+
+
+
+
+/* video */
+/* ----------------------------- */
+
+/* resposividade */
+
+
+
+@media screen and (max-width:700px) {
+    .descricao-livro{
+       
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .img{
+       
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .livro{
+       
+        height: 1000px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .imagem{
+       
+        width: 300px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .all{
+        grid-template-columns:repeat(1, 1fr);
+        padding: 10rem 2rem;
+        align-items: center;
+        justify-content: center;
+        height: 1300px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .livro{
+        grid-template-columns:repeat(1, 1fr);
+        padding: 3rem 2rem;
+        justify-content: center;
+        align-items: center;
+        height: 1300px;
+        
+        
+    }
+       
+}
+
+
+@media screen and (max-width:700px) {
+    .video-livro{
+        padding: 32px;
+    }
+       
+}
+/* resposividade */
+
+/* ----------------------------- */

@@ -11,92 +11,104 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="livros.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="livros.css" />
+    <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="video.css">
-    
+    <link rel="stylesheet" href="video.css" />
   </head>
 
   <body>
     <header>
-        <input type="checkbox" id="check" />
-        <label class="icone" for="check"
-          ><i class="fa fa-bars" aria-hidden="true"></i> MENU</label
-        >
-  
-        <div class="barra">
-          <div class="bar">
+      <input type="checkbox" id="check" />
+      <label class="icone" for="check"
+        ><i class="fa fa-bars" aria-hidden="true"></i> MENU</label
+      >
+
+      <div class="barra">
+        <div class="bar">
+          <div class="back">
+            <ul class="list">
+              <li>
+                <a href="home.html" class="link" id="in">Pagina Inicial</a>
+              </li>
+            </ul>
+
             <div class="back">
               <ul class="list">
                 <li>
-                  <a href="home.html" class="link" id="in">Pagina Inicial</a>
+                  <a href="#" class="link" id="in">Todos os livros</a>
                 </li>
               </ul>
-  
-              <div class="back">
+              <div class="list">
                 <ul class="list">
                   <li>
-                    <a href="#" class="link" id="in">Todos os livros</a>
+                    <a href="#" class="link" id="in">Destaques</a>
                   </li>
                 </ul>
-                <div class="list">
-                  <ul class="list">
-                      <li>
-                        <a href="#" class="link" id="in">Destaques</a>
-                      </li>
-                    </ul>
-                  
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-        
+      </div>
     </header>
 
-   
     <section class="livro">
       <div class="all">
-          <div class="imagem-livro">
-            <div class="imagem">
-              <img src="" alt="">
+        <div class="imagem-livro">
+          <div class="imagem">
+            <div class="img">
+              <img
+                src="herry-potter-e-a-pedra-filosofal.webp"
+                alt="livro harry potter"
+              />
             </div>
-            
           </div>
-    
-          <div class="conteudo-livro">
-            <!-- nome do livro -->
-            <div class="nome-livro">
-              <p>nome do livro</p>
-            </div>
-            <!-- descrição do livro -->
-            <div class="descricao-livro">
-              <p>descrição qualquer</p>
-            </div>
-    
-            <div class="button">
-              <button type="button"> link do vivro</button>
-            </div>
-    
-    
-          </div>        
-      </div>
-    </section>
+        </div>
 
-    <section class="video-livro">
-      
-      <div class="content-video">
-        <div class="video1">
-          <video src="video.mp4" 
-          controls
-         ></video>
+        <div class="conteudo-livro">
+          <div class="nome-livro">
+            <p>
+              <!-- nome do livro -->
+              Harry Potter e a pedra filosofal
+            </p>
+          </div>
+          <div class="descricao-livro">
+            <p>
+              <!-- descrição do livro -->
+              Harry é apresentado ao mundo dos bruxos e descobre que é muito
+              famoso por ter sobrevivido ao ataque de Voldemort. Após várias
+              aventuras, os garotos juntos descobrem que a pedra filosofal
+              (segundo a lenda tem o poder da imortalidade) está guardada na
+              escola de Bruxaria.
+            </p>
+          </div>
+
+          <div class="button1">
+            <button type="button">
+              <a
+                href=  "https://aventurasolimpians.wordpress.com/wp-content/uploads/2013/10/j-k-rowling-1-harry-potter-e-a-pedra-filosofal.pdf"
+                >link do livro</a
+              >
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
+    <section class="treiler">
+      <span style="font-size: 50px">&#128071;</span>
+      <h1>Trailer do livro abaixo</h1>
+      <span style="font-size: 50px">&#128071;</span>
+    </section>
 
-   
+    <section class="video-livro">
+      <div class="content-video">
+        <div class="video1">
+          <video src="harry-potter.mp4" controls></video>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
   </body>
 </html>
