@@ -7,12 +7,16 @@
     box-sizing: border-box;
     font-family: 'inter', sans-serif;
     letter-spacing: 1px;
-    
+	 
 }
 
-/* body {
-	background-color: black;
-} */
+.slider {
+	background-image: url(fundo.jpg) ;
+}
+
+body {
+	background-image: url(fundo.jpg) ;
+}
 
 section {
 	height: 60vh;
