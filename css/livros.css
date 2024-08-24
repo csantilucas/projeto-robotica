@@ -1,5 +1,5 @@
 body {
-    background-image: url(fundo.jpg);
+    background-image: url(/fundo.jpg);
     color: white;
    }
 
@@ -278,7 +278,7 @@ h1 {
 
 @media screen and (max-width:700px) {
     .all{
-        grid-template-columns:repeat(1, 1fr);
+        grid-template-columns:repeat(2, 1fr);
         padding: 10rem 2rem;
         align-items: center;
         justify-content: center;
@@ -288,21 +288,9 @@ h1 {
     
 }
 
-@media screen and (max-width:700px) {
-    .livro{
-        grid-template-columns:repeat(1, 1fr);
-        padding: 3rem 2rem;
-        justify-content: center;
-        align-items: center;
-        height: 1300px;
-        
-        
-    }
-       
-}
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
     .video-livro{
         padding: 32px;
     }

@@ -11,11 +11,11 @@
 }
 
 .slider {
-	background-image: url(fundo.jpg) ;
+	background-image: url(/fundo.jpg) ;
 }
 
 body {
-	background-image: url(fundo.jpg) ;
+	background-image: url(/fundo.jpg) ;
 }
 
 section {
