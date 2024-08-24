@@ -44,3 +44,11 @@ font-size: x-large;
 .back:houver {
     color: rgb(241, 255, 49);
 }
+
+@media screen and (max-width:1200px) {
+    #imgheader{
+        height: 300px;
+        top: 10px;
+    }
+    
+}
