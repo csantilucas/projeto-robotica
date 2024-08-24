@@ -47,7 +47,7 @@ font-size: x-large;
 
 @media screen and (max-width:1200px) {
     #imgheader{
-        height: 300px;
+        height: 250px;
         top: 10px;
     }
     
