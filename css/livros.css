@@ -303,6 +303,13 @@ h1 {
     }
        
 }
+
+@media screen and (max-width:700px) {
+    .treiler{
+        height: 200px;
+    }
+       
+}
 /* resposividade */
 
 /* ----------------------------- */
